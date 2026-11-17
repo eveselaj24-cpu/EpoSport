@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EpoSport | University Sports</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Epo<span>Sport</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#championships">Championships</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+
+            <a href="pages/login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1>Where Campus Meets Competition.</h1>
+
+                <p>
+                    Discover university sports, join championships,
+                    follow matches, and celebrate our athletes.
+                    All in one place.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#championships" class="btn-primary">
+                        Explore Championships
+                    </a>
+
+                    <a href="#sports" class="btn-secondary">
+                        Discover Sports
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+<!-- SPORTS SECTION -->
+        <section class="sports-section" id="sports">
+            <div class="section-heading">
+                <h2>Explore Our Sports</h2>
+                <p>Find your passion, represent your university,
+                and compete with the best.</p>
+            </div>
+            <div class="sports-grid">
+                <a href="pages/sports.html" class="sport-card">
+                    <img src="../assets/images/soccer_image1.jpg" alt="Football">
+                    <h3>Football</h3>
+                </a>
+                <a href="pages/sports.html" class="sport-card">
+                    <img src="../assets/images/basketball_image1.jpg" alt="Basketball">
+                    <h3>Basketball</h3>
+                </a>
+                <a href="pages/sports.html" class="sport-card">
+                    <img src="../assets/images/volleyball_image1.jpg" alt="Volleyball">
+                    <h3>Volleyball</h3>
+                </a>
+                <a href="pages/sports.html" class="sport-card">
+                    <img src="../assets/images/tabletennis_image1.jpg" alt="Table Tennis">
+                    <h3>Table Tennis</h3>
+                </a>
+                <a href="pages/sports.html" class="sport-card">
+                    <img src="../assets/images/chess_image1.jpg" alt="Chess">
+                    <h3>Chess</h3>
+                </a>
+            </div>
+        </section>
+        
+<!-- CHAMPIONSHIPS SECTION -->
+<section class="championships-section" id="championships">
+    <div class="section-heading">
+        <h2>Upcoming Championships</h2>
+        <p>
+            The competition starts here.
+            Find your next challenge!
+        </p>
+    </div>
+    
+<div class="championship-filters">
+    <button class="filter-btn active" data-filter="all">
+        All
+    </button>
+
+    <button class="filter-btn" data-filter="open">
+        Registration Open
+    </button>
+
+    <button class="filter-btn" data-filter="upcoming">
+        Coming Soon
+    </button>
+</div>
+
+    <div class="championships-grid">
+        <!-- FOOTBALL -->
+        <article class="championship-card" data-status="open">
+            <img src="../assets/images/championship_1.jpg" alt="Football Championship">
+            <div class="championship-info">
+                <span class="status open">
+                    Registration Open
+                </span>
+                <h3>Campus Football Cup</h3>
+                <p>⚽ Football | Team Competition</p>
+                <p>📍 University Sports Field</p>
+                <p>📅 Date: To Be Announced</p>
+                <a href="pages/championship.html"class="championship-btn">
+                    View Details
+                </a>
+            </div>
+        </article>
+        <!-- BASKETBALL -->
+        <article class="championship-card" data-status="upcoming">
+            <img src="../assets/images/championship_2.jpg" alt="Basketball Championship">
+            <div class="championship-info">
+                <span class="status upcoming">
+                    Coming Soon
+                </span>
+                <h3>3v3 Basketball Challenge</h3>
+                <p>🏀 Basketball | Team Competition</p>
+                <p>📍 University Sports Hall</p>
+                <p>📅 Date: To Be Announced</p>
+                <a href="pages/championship.html" class="championship-btn">
+                    View Details
+                </a>
+            </div>
+        </article>
+        <!-- CHESS -->
+        <article class="championship-card" data-status="upcoming">
+            <img src="../assets/images/championship_3.jpg" alt="Chess Championship">
+            <div class="championship-info">
+                <span class="status upcoming">
+                    Coming Soon
+                </span>
+                <h3>University Chess Open</h3>
+                <p>♟️ Chess | Individual Competition</p>
+                <p>📍 University Campus</p>
+                <p>📅 Date: To Be Announced</p>
+                <a href="pages/championship.html" class="championship-btn"> View Details</a>
+            </div>
+        </article>
+    </div>
+    <div class="view-all">
+        <a href="pages/championship.html" class="btn-secondary">
+            View All Championships
+        </a>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section" id="gallery">
+
+    <div class="section-heading">
+        <h2>Campus Sports Gallery</h2>
+        <p>
+            Every match has a story.
+            Relive the best moments.
+        </p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="../assets/images/football.jpg"
+                 alt="Football Match">
+            <div class="gallery-overlay">
+                <h3>Football Moments</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../assets/images/basketball.jpg"
+                 alt="Basketball Match">
+            <div class="gallery-overlay">
+                <h3>Basketball Action</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../assets/images/volleyball.jpg"
+                 alt="Volleyball Match">
+            <div class="gallery-overlay">
+                <h3>Volleyball Highlights</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../assets/images/tabletennis.jpg"
+                 alt="Table Tennis Match">
+            <div class="gallery-overlay">
+                <h3>Table Tennis</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../assets/images/chess.jpg"
+                 alt="Chess Tournament">
+            <div class="gallery-overlay">
+                <h3>Chess Tournament</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="view-all">
+        <a href="pages/gallery.html" class="btn-secondary">
+            Explore Full Gallery
+        </a>
+    </div>
+
+</section>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Image preview"
+     aria-hidden="true">
+
+    <button class="lightbox-close"
+            aria-label="Close image">
+        &times;
+    </button>
+
+    <img id="lightbox-image"
+         src=""
+         alt="Gallery preview">
+</div>
+
+    </main>
+
+    <!-- FOOTER -->
+    
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>Epo<span>Sport</span></h2>
+            <p>
+                Bringing university sports together.
+                Compete, connect, and celebrate.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="pages/sports.html">Sports</a>
+            <a href="pages/championship.html">Championships</a>
+            <a href="pages/news.html">News</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="pages/gallery.html">Gallery</a>
+            <a href="pages/login.html">Login</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 EpoSport. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

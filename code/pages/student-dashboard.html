@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | UniSport</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/dashboard.js" defer></script>
+</head>
+
+<body class="dashboard-page">
+
+    <header class="navbar">
+        <a class="logo"">
+            Epo<span>Sport</span>
+        </a>
+
+        <nav class="dashboard-nav">
+        </nav>
+
+        <button id="logoutBtn" class="logout-btn">
+            Log out
+        </button>
+    </header>
+
+    <main class="dashboard-main">
+
+        <!-- WELCOME -->
+        <section class="dashboard-welcome">
+            <h1>Welcome back, <span id="studentName">Student</span>! 👋</h1>
+            <p>Here's what's happening with your sports activities.</p>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <h3>My Championships</h3>
+                <strong id="championshipCount">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Upcoming Matches</h3>
+                <strong id="matchCount">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Matches Won</h3>
+                <strong id="winCount">0</strong>
+            </div>
+        </section>
+
+        <!-- MY CHAMPIONSHIPS -->
+        <section class="dashboard-section">
+            <div class="dashboard-section-header">
+                <h2>My Championships</h2>
+                <a href="championship.html" class="dashboard-link">
+                    Explore Championships
+                </a>
+            </div>
+
+            <div id="myChampionships" class="dashboard-list"></div>
+        </section>
+
+        <!-- UPCOMING MATCHES -->
+        <section class="dashboard-section">
+            <h2>Upcoming Matches</h2>
+            <div id="upcomingMatches" class="dashboard-list"></div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="dashboard-section">
+            <h2>My Results</h2>
+
+            <div class="table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Championship</th>
+                            <th>Opponent</th>
+                            <th>Score</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultsBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section class="dashboard-section">
+            <h2>My Profile</h2>
+
+            <div class="profile-card">
+                <p><strong>Name:</strong> <span id="profileName"></span></p>
+                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                <p><strong>Role:</strong> Student</p>
+            </div>
+        </section>
+
+    </main>
+    <script src="../js/student.js"></script>
+</body>
+</html>
